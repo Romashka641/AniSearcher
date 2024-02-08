@@ -1,0 +1,63 @@
+<doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <img src="logo.png" class="logo">
+    <div id=switch>
+	  <input type=button id=switcher onclick="switched(this);" value="Искать по фильтрам" />
+	</div>
+	<div id=nameLabel>
+      <label for="Name" class=name id=nameLabel>Введите название аниме</label>
+    </div>
+    <div id=nameInput>
+	  <input type="text" id="Name">
+	</div>
+		
+	<label for="Genre" class="hide" id=genreLabel>Выберете жанры</label>
+	
+	<select id="Genre" class="hide" multiple>
+		<option value=selectGenres selected>--Выберете жанры--</option>
+		<option value=Adventure>Приключение</option>
+		<option value=Action>Боевик</option>
+		<option value=Comedy>Комедия</option>
+		<option value=Routine>Повседневность</option>
+		<option value=Romantic>Романтика</option>
+		<option value=Drama>Драма</option>
+		<option value=Fantastic>Фантастика</option>
+		<option value=Fantasy>Фэнтэзи</option>
+		<option value=Mystic>Мистика</option>
+		<option value=Detective>Детектив</option>
+		<option value=Triller>Триллер </option>
+		<option value=Psychology>Психология</option>
+		<option value=MartialArts>Боевые исскувства</option>
+		<option value=Vampirs>Вампиры</option>
+		<option value=Military>Военное</option>
+		<option value=Demons>Демоны</option>
+		<option value=Games>Игры</option>
+		<option value=History>История</option>
+		<option value=Cosmos>Космос</option>
+		<option value=Magic>Магия</option>
+		<option value=Mecha>Меха</option>
+		<option value=Music>Музыка</option>
+		<option value=Parody>Пародия</option>
+		<option value=Police>Полиция</option>
+		<option value=Samurais>Самураи</option>
+		<option value=Sedze>Сёдзё</option>
+		<option value=Senen>Сёнен</option>
+		<option value=Sport>Спорт</option>
+		<option value=SuperPower>Супер сила</option>
+		<option value=Horror>Ужасы</option>
+		<option value=School>Школа</option>
+	</select>
+    <div id=btn>
+      <button onclick="searchAnime();">Найти</button>
+    </div>
+    
+    <p id=message></p>
+    
+    <script src=index.js></script>
+  </body>
+</html>
